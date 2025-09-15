@@ -1,0 +1,41 @@
+// variable = a reusable container for a value
+//            a varibale behaves as if it was the value it contains
+
+// primitive = simple value stored directly in memory (stack)
+// reference = memory address (stack) that points to the (heap)
+
+// primitive vs reference
+// ---------    ---------
+// int          string
+// double       array
+// char         object
+// boolean
+
+// 2 steps to creating a variable
+// ------------------------------
+// 1. declaration = specify the type and name
+// 2. initialization = assign a value (optional)
+
+
+public class Main {
+    public static void main(String[] args) {
+
+      int age = 25;
+
+      double price = 19.99;
+
+      char grade = 'A';
+
+      boolean isStudent = true;
+      
+      String name = "Alice";
+
+      // Print variables to the console
+      System.out.println("Name: " + name);
+      System.out.println("Age: " + age);
+      System.out.println("Price: $" + price);
+      System.out.println("Grade: " + grade);
+      System.out.println("Is Student: " + isStudent);
+
+    }
+}

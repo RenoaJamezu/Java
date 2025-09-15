@@ -1,0 +1,60 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+      
+      Scanner scanner = new Scanner(System.in);
+
+      System.out.print("Enter your name: ");
+      String name = scanner.nextLine(); // next line to read a full line of input
+
+      System.out.print("Enter your age: ");
+      int age = scanner.nextInt(); // next int to read an integer
+
+      System.out.print("Enter your GPA: ");
+      double gpa = scanner.nextDouble(); // next double to read a floating-point number
+
+      System.out.print("Are you a Student? (true/false): ");
+      boolean isStudent = scanner.nextBoolean(); // next boolean to read a boolean value
+
+      System.out.println("Hello, " + name + "! Welcome to the Java program.");
+      System.out.println("You are " + age + " years old.");
+      System.out.println("Your GPA is " + gpa);
+      
+      if(isStudent){
+        System.out.println("You are Enrolled.");
+      } else {
+        System.out.println("You are not a Enrolled.");
+      }
+
+      scanner.close(); // Close the scanner to prevent resource leaks
+    }
+}
+
+---------------------------------------------------------------------
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+      // Calculate the area of rectangle
+
+      double width;
+      double length;
+      double area;
+      
+      Scanner scanner = new Scanner(System.in);
+
+      System.out.print("Enter the width of the rectangle: ");
+      width = scanner.nextDouble();
+     
+      System.out.print("Enter the length of the rectangle: ");
+      length = scanner.nextDouble();
+
+      area = width * length;
+
+      System.out.println("The area of the rectangle is: " + area + "cm²");
+
+      scanner.close(); // Close the scanner to prevent resource leaks
+    }
+}

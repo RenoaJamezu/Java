@@ -1,0 +1,87 @@
+
+public class Main {
+  public static void main(String[] args) {
+    
+    // System.out.println(Math.PI); // Prints PI
+    // System.out.println(Math.E); // Prints Exponential Constant
+
+    double result;
+
+    result = Math.pow(2, 3); // To the Power
+    result = Math.abs(-5); // Absolute value
+    result = Math.sqrt(9); // Square root
+    result = Math.round(3.14); // Round
+    result = Math.ceil(3.14); // Round ceiling
+    result = Math.floor(3.14); // Round floor
+    result = Math.max(10, 20); // Max value
+    result = Math.min(10, 20); // Min value
+
+    System.out.println(result);
+
+  }
+}
+
+-----------------------------------------------------------
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    
+    // Hypotenuse c = Math.sqrt(a² + b²)
+
+    Scanner scanner = new Scanner(System.in);
+
+    double a;
+    double b;
+    double c;
+
+    System.out.print("Enter the length of side A: ");
+    a = scanner.nextDouble();
+
+    System.out.print("Enter the length of side B: ");
+    b = scanner.nextDouble();
+
+    c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+
+    System.out.println("The hypotenuse (side c) is: " + c + "cm");
+
+
+    scanner.close();
+
+  }
+}
+
+---------------------------------------------------------------------
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    
+    // Hypotenuse c = Math.sqrt(a² + b²)
+
+    Scanner scanner = new Scanner(System.in);
+    
+    // circumference = 2 * Math.PI + radius;
+    // area = Math.PI * Math.pow(radius, 2);
+    // volume = (4.0 / 3.0) * Math.PI * Math.pow(radius, 3);
+
+    double radius;
+    double circumference;
+    double area;
+    double volume;
+
+    System.out.print("Enter the Radius of the Circle: ");
+    radius = scanner.nextDouble();
+
+    circumference = 2 * Math.PI + radius;
+    area = Math.PI * Math.pow(radius, 2);
+    volume = (4.0 / 3.0) * Math.PI * Math.pow(radius, 3);
+
+    System.out.printf("The circumference is: %.1fcm\n", circumference); // or + (2 * Math.PI + radius)
+    System.out.printf("The area is: %.1fcm²\n", area); // alt + 0178 for ²
+    System.out.printf("The volume is: %.1fcm³\n", volume); // alt + 0179 for ³
+
+    scanner.close();
+
+  }
+}

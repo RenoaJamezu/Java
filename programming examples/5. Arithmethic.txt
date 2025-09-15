@@ -1,0 +1,54 @@
+public class Main {
+    public static void main(String[] args) {
+      
+      // Arithmetic Operators
+
+      int x = 10;
+      int y = 5;
+      int z;
+
+      // z = x + y; // Addition
+      // z = x - y; // Subtraction
+      // z = x * y; // Multiplication
+      // z = x / y; // Division
+      z = x % y; // Modulus
+
+      // Printing results
+      System.out.println(z);
+
+
+
+      // Augmented Assignment Operators
+
+      int a = 10;
+      int b = 5;
+
+      a += b; // Addition
+      // a -= b; // Subtraction
+      // a *= b; // Multiplication
+      // a /= b; // Division
+      // a %= b; // Modulus
+
+      // Printing results
+      System.out.println(a);
+
+
+      // Increment and Decrement Operators
+      int i = 1;
+
+      // i++; // Increment
+      i--; // Decrement
+
+      // Printing results
+      System.out.println(i);
+
+
+      // Order of Operations [P-E-M-D-A-S]
+      
+      double results = 3 + 4 * (7 - 5) / 2.0;
+
+      // Printing results
+      System.out.println(results);
+
+    }
+}
